@@ -8,3 +8,10 @@
 7. conectamos sequelize en la db desde app.js
 8. creamos los modelos
 9. creamos las tablas
+
+
+//Sequelize ORM #2 CRUD/API básicos
+1. utilizamos middelwares en app.js para poder hacer ejecutar el metodo post y otro middelware para leer formularios HTML
+2. creamos un modelo Post.js
+3. Creamos la ruta de Post.js en routes/Post.js
+4. creamos en la ruta el crud para el post
