@@ -1,0 +1,10 @@
+// Sequelize ORM #1 Integracion con Expressjs
+1. npm init -y, y crear los scripts
+2. .gitignore, config.js, app.js y docker-compose.yml
+3. npm i express nodemon
+4. creamos el entorno de express en la app.js
+5. configuramos el config.js
+6. database/db.js y creamon una instancia de Sequelize
+7. conectamos sequelize en la db desde app.js
+8. creamos los modelos
+9. creamos las tablas
