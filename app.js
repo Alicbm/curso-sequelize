@@ -18,6 +18,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api/post', require('./routes/Post'))
+app.use('/api/user', require('./routes/User'))
 
 //Corremos el servidor
 app.listen(port, () => {

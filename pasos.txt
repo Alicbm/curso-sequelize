@@ -10,8 +10,14 @@
 9. creamos las tablas
 
 
-//Sequelize ORM #2 CRUD/API básicos
+// Sequelize ORM #2 CRUD/API básicos
 1. utilizamos middelwares en app.js para poder hacer ejecutar el metodo post y otro middelware para leer formularios HTML
 2. creamos un modelo Post.js
 3. Creamos la ruta de Post.js en routes/Post.js
 4. creamos en la ruta el crud para el post
+
+// Sequelize ORM # 3 Validaciones en el BackEnd
+1. creamos la carpeta validations
+2. modificamos el modelo user
+3. creamos una nueva rita para este modelo en app.js
+4. hacemos Validaciones en los diferentes modelos
