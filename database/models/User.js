@@ -57,12 +57,9 @@ User.init({
   // si es 0 es user normal, si es 1 es admin
   role: {
     type: DataTypes.INTEGER,
-    allowNull: false,
-    validate: {
-
-    }
+    allowNull: false
   }
-}, { sequelize, modelName: 'user' })
+}, { sequelize, modelName: 'user', timestamps: false })
 
 module.exports = User
 

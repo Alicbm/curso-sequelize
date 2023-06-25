@@ -21,3 +21,9 @@
 2. modificamos el modelo user
 3. creamos una nueva rita para este modelo en app.js
 4. hacemos Validaciones en los diferentes modelos
+
+// Sequelize ORM #4 | Relaciones: hasOne & belongsTo
+1. creamos el modelo address
+2. creamos el archivo associate en /database
+3. importamos los diferentes modelos al archivo associate
+4. importamos el archivo associate a app.js

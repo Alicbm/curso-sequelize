@@ -11,6 +11,6 @@ Post.init({
     type: DataTypes.TEXT,
     allowNull: false
   },
-}, { sequelize, modelName: 'post' })
+}, { sequelize, modelName: 'post', timestamps: false })
 
 module.exports = Post
