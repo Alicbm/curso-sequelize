@@ -1,10 +1,26 @@
 const express = require('express')
 const router = express.Router()
 const User = require('../database/models/User')
+const Address = require('../database/models/Address')
 
 //INDEX
 router.get('/',(req, res) =>{
-  User.findAll().then(post => {
+  User.findAll({
+    //asi agregamos las relaciones antes creadas
+    //include: 'address',
+    
+    //otra forma de agregar la relacion pero especificando los campos que qeuremos mostar de esa nueva info
+    include: {
+      model: Address,
+      // cuando le ponemos un alias en la relacion (associate) debemos poner el mismo alias acá
+      as: 'domicilio',
+      attributes: ['street']
+    },
+
+    // aca especificamos los campos que queremos mostrar
+    // si no ponemos nada se muestran todos los campos
+    attributes: [ "username", "email", "age" ]
+  }).then(post => {
     res.json(post)
   })
 })

@@ -27,3 +27,4 @@
 2. creamos el archivo associate en /database
 3. importamos los diferentes modelos al archivo associate
 4. importamos el archivo associate a app.js
+5. creamos las asociaciones en el archivjo associate.js
