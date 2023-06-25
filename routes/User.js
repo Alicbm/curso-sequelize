@@ -61,6 +61,18 @@ router.get('/:id/posts', (req, res) => {
   })
 })
 
+//ver las bandas de usuario --> /api/users/:id/bands
+router.get('/:id/bands', (req, res) => {
+  const { id } = req.params;
+  User.findByPk(id).then(user => {
+
+    //se usa get + el atributo que queramos mostrar, en este caso queremos a domicilio
+    // vemos los bands del usuario que elijamos(id)
+    user.getBands().then(dom => {
+      res.json(dom)
+    })
+  })
+})
 
 // CREATE
 router.post('/', (req, res) => {

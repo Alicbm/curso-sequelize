@@ -32,3 +32,9 @@
 // Sequelize ORM #5 | Relaciones: hasMany & belongsTo
 1. cramos las relaciones uno a muchos en associate.js
 2. creamos un archivo seed.js para que llene la db sin que lo hagamos siemrpe manualmenete
+
+// Sequelize ORM #6 | Relaciones: ManyToMany
+1. creamos un nuevo modelo, Band.js
+2. creamos las asociaciones
+3. creamos datos en seed.js para la nueva tabla creada (por la relacion muchos a muchos)
+4. creamos una nueva ruta en user para ver las bandas a donde perteneces¿n los users

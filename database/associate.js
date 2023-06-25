@@ -1,6 +1,7 @@
 const Post =  require('./models/Post')
 const User =  require('./models/User')
 const Address =  require('./models/Address')
+const Band =  require('./models/Band')
 
 //Relaciones
 
@@ -20,3 +21,9 @@ Address.belongsTo(User, { as: 'residente', foreignKey: 'residente_id' })
 User.hasMany(Post, { as: 'publicaciones', foreignKey: 'autor_id' })
 
 Post.belongsTo(User, { as: 'autor', foreignKey: 'autor_id'})
+
+//MUCHOS A MUCHOS --> user pertenece a varias bandas
+// esto crea una nueva tabla para hacer las asocioaciones
+User.belongsToMany(Band, { through: "user_band" })
+Band.belongsToMany(User, { through: "user_band" })
+

@@ -2,6 +2,7 @@ const sequelize = require('./database/db')
 const User = require('./database/models/User')
 const Post = require('./database/models/Post')
 const Address = require('./database/models/Address')
+const Band = require('./database/models/Band')
 require('./database/associate')
 
 const userData = [
@@ -36,6 +37,18 @@ sequelize.sync({ force: false }).then(() => {
   // addressData.forEach(address => Address.create(address))
 }).then(() => {
   //rellenar posts
-  postData.forEach(post => Post.create(post))
+  // postData.forEach(post => Post.create(post))
+}).then(async () => {
+  let band1 = await Band.create({
+    name: 'bandaspepe',
+    type: 'rock',
+    users: [
+      { username: 'lucia', email: 'lucia@mail.com', age: 23, role: 0 },
+      { username: 'julio', email: 'julio@mail.com', age: 21, role: 0 },
+      { username: 'carlos', email: 'carlos@mail.com', age: 27, role: 0 },
+    ]
+  }, {
+    include: 'users'
+  })
 })
 
