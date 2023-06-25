@@ -39,18 +39,18 @@ User.init({
         msg: 'The age must be a number'
       },
       min: {
-        args: true,
+        args: 10,
         msg: 'The age must be major or equal than 10'
       },
       max: {
-        args: true,
+        args: 150,
         msg: 'The age must be less or equal than 120'
       }, 
-      esPar(value){
-        if(value % 2 == 0){
-          throw new Error('La edad debe ser un numeor par')
-        }
-      }
+      // esPar(value){
+      //   if(value % 2 == 0){
+      //     throw new Error('La edad debe ser un numeor par')
+      //   }
+      // }
     }
   },
 

@@ -28,3 +28,7 @@
 3. importamos los diferentes modelos al archivo associate
 4. importamos el archivo associate a app.js
 5. creamos las asociaciones en el archivjo associate.js
+
+// Sequelize ORM #5 | Relaciones: hasMany & belongsTo
+1. cramos las relaciones uno a muchos en associate.js
+2. creamos un archivo seed.js para que llene la db sin que lo hagamos siemrpe manualmenete
